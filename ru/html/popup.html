@@ -1,0 +1,59 @@
+<div class="popup" id="popup">
+	<div class="popup__body fl-r-c" id="popupBody">
+
+		<div class="popup__content fl-r-c">
+			<a href="#header" class="popup__close close-popup"><img src="../img/close.webp" alt="icon-close"
+					width="50"></a>
+			<div class="content__item content__item--form">
+				<h3>Запись он-лайн</h3>
+				<form action="../assets/sendmail.php" method="POST" class="form fl-c-c" id="form">
+					<div class="input-grid">
+						<div class="input-grid__item">
+							<label for="formName">Ваше имя:*</label>
+							<input type="text" name="name" id="formName" class="form__input _req">
+						</div>
+						<div class="input-grid__item">
+							<label for="formTel">Номер телефона:*</label>
+							<input type="tel" name="tel" id="formTel" class="form__input _tel _req">
+						</div>
+					</div>
+					<div class="input-grid grid-area">
+						<div class="input-grid__item breed">
+							<label for="formBreed">Порода животного:*</label>
+							<input type="text" name="breed" id="formBreed" class="form__input _req">
+						</div>
+						<div class="input-grid__item service">
+							<label for="formService">Желаемая услуга:</label>
+							<select type="text" name="service" id="formService">
+								<option value="service-1" selected><span class="option">Груминг собак</span>
+								</option>
+								<option value="service-1">Стрижка собак
+								</option>
+								<option value="service-1">Стрижка котов
+								</option>
+								<option value="service-2">Гигиенический уход</option>
+								<option value="service-3">Тримминг и стриппинг
+								</option>
+								<option value="service-4">Груминг котов
+								</option>
+							</select>
+						</div>
+						<div class="input-grid__item date">
+							<label for="formDate">Желаемая дата:</label>
+							<input type="date" name="date" id="formDate">
+						</div>
+					</div>
+					<div class="input-grid__item">
+						<label for="formMessage">Дополнительная информация
+							(необязательно):</label>
+						<textarea name="message" id="formMessage"
+							style="min-height: 100px;resize: vertical;height: 100px;margin-bottom: 7px; padding: 10px;"></textarea>
+					</div>
+					<div class="input-grid__item" style="width: 100%;">
+						<button class="button form-btn" type="submit" id="form-submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
